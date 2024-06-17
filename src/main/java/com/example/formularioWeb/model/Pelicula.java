@@ -11,7 +11,7 @@ import lombok.*;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
+
 /*
 * reconoce que es una entidad
 * */
@@ -27,4 +27,9 @@ public class Pelicula {
     String director;
     String genero;
 
+    public Pelicula(String name, String director, String genero) {
+        this.name = name;
+        this.director = director;
+        this.genero = genero;
+    }
 }
